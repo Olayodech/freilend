@@ -1,0 +1,23 @@
+<div class="details-section" style="margin-top: 10%">
+    <div class="col-4">
+        <img src="{{product?.imgUrl}}" class="detail_image">
+    </div>
+    <div class="col-6" >
+        <p class="detail_category">{{product.productCategoryName}}</p>
+
+        <p class="detail_name">{{product.name}}</p>
+        <p class="detail-title">{{product.title}}</p>
+    </div>
+    <hr>
+    <div>
+        <p class="detail_description">{{product.description}}</p>
+    </div>
+    <div>
+        <p class="detail_currency">{{product.price | currency: "GBP"}}</p>
+    </div>
+    <div class="col-4 sm-8">
+        <button (click)="addToCart()">Add To Cart</button>
+        <button>Continue Shopping</button>
+    </div>
+
+</div>

@@ -1,0 +1,30 @@
+.details-section {
+    position: fixed;
+    width: 50em;
+    margin-left: 20%;
+    top: 2%;
+    height: auto;
+    border-style: groove;
+    font-size: 20px;
+}
+
+.detail_image {
+    height: 350px;
+    border-style: groove;
+    background-color: red;
+}
+
+.col-4 {
+    max-width: 33.3%;
+}
+
+.col-6 {
+    max-width: 33.3%;
+    border-style: ridge;
+
+}
+.sm-8{
+    border-style: ridge;
+    max-width: 50%;
+}
+

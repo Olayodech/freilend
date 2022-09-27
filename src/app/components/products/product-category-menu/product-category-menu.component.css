@@ -1,0 +1,12 @@
+#sidebar {
+    position: fixed;
+    width: 13em;
+    height: auto;
+    top: 18%;
+    right: auto;
+    bottom: 100px;
+    left: 1em;
+    border-style: groove;
+    margin-top: 1%;
+    font-size: 15px;
+}

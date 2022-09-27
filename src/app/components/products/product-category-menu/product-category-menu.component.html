@@ -1,0 +1,7 @@
+<div id="sidebar">
+    <nav *ngFor="let item of productCategory">
+        <ul>
+            <a routerLink="/category/{{item.categoryId}}" routerLinkActive="active-link">{{item.name}}</a>
+        </ul>
+    </nav>
+</div>

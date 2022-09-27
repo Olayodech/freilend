@@ -1,0 +1,25 @@
+.main_cart_container {
+    position: fixed;
+    /* width: 50em; */
+    margin-left: 20%;
+    top: 20%;
+    height: auto;
+    border-style: groove;
+    font-size: 20px;
+}
+
+table tr th{
+    background-color: gray;
+}
+.thead_id {
+    width: 20%;
+}
+
+.thead_name {
+    width: 50%;
+}
+
+.emptycart {
+    border-style: none !important;
+    background-color: gray;
+}

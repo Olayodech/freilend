@@ -1,0 +1,54 @@
+<!-- <div class="product_main"> -->
+
+
+<app-product-category-menu></app-product-category-menu>
+
+<div id="main">
+    <nav class="subnav">
+        <ul>
+            <li>
+                <a routerLink="/category/all" routerLinkActive="active-link">All</a>
+            </li>
+            <li>
+                <a routerLink="/category/grocery" routerLinkActive="active-link">Grocery</a>
+            </li>
+            <li>
+                <a routerLink="/category/moneyshop" routerLinkActive="active-link">Money Shop</a>
+            </li>
+            <li>
+                <a routerLink="/category/electronics" routerLinkActive="active-link">Electronics</a>
+            </li>
+            <li>
+                <a routerLink="/category/home" routerLinkActive="active-link">Home</a>
+            </li>
+            <li>
+                <a routerLink="/category/health" routerLinkActive="active-link">Health & Personal Care</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- <div class="product_container"> -->
+
+    <div *ngFor="let tempProduct of products" class="product_container">
+
+        <a routerLink="/product/product_details/{{tempProduct.code}}">
+            <img class="product_image" src="{{tempProduct.imgUrl}}" alt="images">
+        </a>
+
+        <a routerLink="/product/product_details/{{tempProduct.code}}" class="product_details">
+
+            {{tempProduct.name}}: {{tempProduct.price | currency: 'GBP'}}
+
+        </a>
+        <div>
+            <button (click)="addToCart(tempProduct)" class="add_to-cart">Add To Cart</button>
+            <button class="buy_now">Buy Now</button>
+        </div>
+    </div>
+
+    <div *ngIf="products?.length === 0" class="alert alert-warnings col-md-12" role="alert">
+        No Products Found
+    </div>
+</div>
+<!-- </div> -->
